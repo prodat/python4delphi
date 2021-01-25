@@ -1351,6 +1351,7 @@ type
     Py_BuildValue:      TPy_BuildValue;
 
     Py_Initialize:      procedure; cdecl;
+    Py_InitializeEx:    procedure(initsigs: Integer); cdecl;
     Py_Exit:            procedure( RetVal: Integer); cdecl;
     PyEval_GetBuiltins: function: PPyObject; cdecl;
     PyDict_Copy:        function(mp: PPyObject):PPyObject; cdecl;
@@ -3322,6 +3323,7 @@ begin
   PyArg_ParseTupleAndKeywords := Import('PyArg_ParseTupleAndKeywords');
   Py_BuildValue             := Import('Py_BuildValue');
   Py_Initialize             := Import('Py_Initialize');
+  Py_InitializeEx           := Import('Py_InitializeEx');
   PyModule_GetDict          := Import('PyModule_GetDict');
   PyObject_Str              := Import('PyObject_Str');
   PyRun_String              := Import('PyRun_String');
@@ -4191,7 +4193,8 @@ begin
   AssignPyFlags;
   if FPythonHome <> '' then
     Py_SetPythonHome(PWideChar(FPythonHome));
-  Py_Initialize;
+  //Py_Initialize;
+  Py_InitializeEx(0);
   if Assigned(Py_IsInitialized) then
     FInitialized := Py_IsInitialized() <> 0
   else
