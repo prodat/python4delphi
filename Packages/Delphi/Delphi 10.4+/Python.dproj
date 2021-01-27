@@ -39,10 +39,19 @@
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;CFBundleName=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+        <DCC_DcuOutput>$(_dcu)</DCC_DcuOutput>
+        <DCC_DcpOutput>$(_dcp)</DCC_DcpOutput>
+        <DCC_BplOutput>$(_bpl)</DCC_BplOutput>
+        <DCC_BpiOutput>$(_dcp)</DCC_BpiOutput>
+        <DCC_HppOutput>$(_dcu)</DCC_HppOutput>
+        <DCC_ObjOutput>$(_dcu)</DCC_ObjOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <BT_BuildType>Debug</BT_BuildType>
-        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_Namespace>$(CimNamespace);Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_Define>$(CimDefines_Extern);$(DCC_Define)</DCC_Define>
+        <DCC_UnitSearchPath>$(CimSearchPath);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitAlias>$(CimUnitAliases);$(DCC_UnitAlias)</DCC_UnitAlias>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
         <DCC_DebugInformation>0</DCC_DebugInformation>
@@ -85,12 +94,7 @@
                 <Source>
                     <Source Name="MainSource">Python.dpk</Source>
                 </Source>
-                <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k270.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp270.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                </Excluded_Packages>
+                <Excluded_Packages/>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
