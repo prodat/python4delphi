@@ -125,6 +125,11 @@ object Form1: TForm1
     TabOrder = 2
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.10'
+    UseLastKnownVersion = False
     InitScript.Strings = (
       'import sys'
       'print ("Python Dll: ", sys.version)'
@@ -138,7 +143,7 @@ object Form1: TForm1
     OnInitialization = PythonType1Initialization
     TypeName = 'Point'
     Prefix = 'Create'
-    Services.Basic = [bsGetAttrO, bsSetAttrO, bsRepr, bsStr]
+    Services.Basic = [bsRepr, bsStr, bsGetAttrO, bsSetAttrO]
     Services.InplaceNumber = []
     Services.Number = []
     Services.Sequence = []

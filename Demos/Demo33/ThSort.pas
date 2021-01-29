@@ -1,6 +1,6 @@
 unit ThSort;
 
-{$I Definition.Inc}
+{$I '..\..\Source\Definition.Inc'}
 
 interface
 

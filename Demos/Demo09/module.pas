@@ -34,6 +34,9 @@ begin
   try
     gEngine := TPythonEngine.Create(nil);
     gEngine.AutoFinalize := False;
+    gEngine.UseLastKnownVersion := False;
+    gEngine.DllName := 'python39.dll';
+    gEngine.DllPath := 'E:\EXE\Python';
     gEngine.LoadDll;
     gModule := TPythonModule.Create(nil);
     gModule.Engine := gEngine;
@@ -51,9 +54,8 @@ begin
     gEngine := TPythonEngine.Create(nil);
     gEngine.AutoFinalize := False;
     gEngine.UseLastKnownVersion := False;
-    gEngine.RegVersion := '3.7';  //<-- Use the same version as the python 3.x your main program uses
-    gEngine.APIVersion := 1013;
-    gEngine.DllName := 'python37.dll';
+    gEngine.DllName := 'python39.dll';
+    gEngine.DllPath := 'E:\EXE\Python';
     gEngine.LoadDll;
     gModule := TPythonModule.Create(nil);
     gModule.Engine := gEngine;

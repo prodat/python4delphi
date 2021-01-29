@@ -95,6 +95,9 @@ object Form1: TForm1
     TabOrder = 2
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    UseLastKnownVersion = False
     IO = PythonGUIInputOutput1
     Left = 32
   end

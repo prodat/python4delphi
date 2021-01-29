@@ -115,6 +115,11 @@ object Form1: TForm1
     TabOrder = 2
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.10'
+    UseLastKnownVersion = False
     IO = PythonGUIInputOutput1
     Left = 32
   end
@@ -142,7 +147,7 @@ object Form1: TForm1
     TypeName = 'TStringList'
     Prefix = 'Create'
     Module = pmP4D
-    Services.Basic = [bsGetAttrO, bsSetAttrO, bsRepr, bsStr, bsIter]
+    Services.Basic = [bsRepr, bsStr, bsGetAttrO, bsSetAttrO, bsIter]
     Services.InplaceNumber = []
     Services.Number = []
     Services.Sequence = [ssLength, ssItem, ssAssItem]
@@ -163,7 +168,7 @@ object Form1: TForm1
     TypeName = 'TStringListIterator'
     Prefix = 'Create'
     Module = pmP4D
-    Services.Basic = [bsGetAttrO, bsSetAttrO, bsRepr, bsStr, bsIter, bsIterNext]
+    Services.Basic = [bsRepr, bsStr, bsGetAttrO, bsSetAttrO, bsIter, bsIterNext]
     Services.InplaceNumber = []
     Services.Number = []
     Services.Sequence = []

@@ -290,6 +290,11 @@ object Main: TMain
     TabOrder = 2
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.10'
+    UseLastKnownVersion = False
     IO = PythonGUIInputOutput1
     Left = 192
     Top = 48

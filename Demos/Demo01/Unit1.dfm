@@ -98,25 +98,34 @@ object Form1: TForm1
     TabOrder = 2
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.9'
+    UseLastKnownVersion = False
     IO = PythonGUIInputOutput1
     Left = 32
+    Top = 32
   end
   object OpenDialog1: TOpenDialog
     DefaultExt = '*.py'
     Filter = 'Python files|*.py|Text files|*.txt|All files|*.*'
     Title = 'Open'
-    Left = 176
+    Left = 248
+    Top = 32
   end
   object SaveDialog1: TSaveDialog
     DefaultExt = '*.py'
     Filter = 'Python files|*.py|Text files|*.txt|All files|*.*'
     Title = 'Save As'
-    Left = 208
+    Left = 344
+    Top = 32
   end
   object PythonGUIInputOutput1: TPythonGUIInputOutput
     UnicodeIO = True
     RawOutput = False
     Output = Memo2
-    Left = 64
+    Left = 144
+    Top = 32
   end
 end

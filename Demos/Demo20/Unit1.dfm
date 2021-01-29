@@ -119,6 +119,9 @@ object Form1: TForm1
     end
   end
   object PythonEngine1: TPythonEngine
+    UseLastKnownVersion = False
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
     AutoLoad = False
     IO = PythonGUIInputOutput1
     Left = 16

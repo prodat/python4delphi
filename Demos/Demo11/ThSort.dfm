@@ -165,6 +165,11 @@ object ThreadSortForm: TThreadSortForm
     OnClick = SaveBtnClick
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.10'
+    UseLastKnownVersion = False
     InitThreads = True
     RedirectIO = False
     Left = 16

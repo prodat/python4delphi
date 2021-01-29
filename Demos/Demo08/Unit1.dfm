@@ -135,6 +135,11 @@ object Form1: TForm1
     TabOrder = 2
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.10'
+    UseLastKnownVersion = False
     IO = PythonGUIInputOutput1
     Left = 16
     Top = 16
@@ -161,7 +166,7 @@ object Form1: TForm1
     TypeName = 'Point'
     Prefix = 'Create'
     Module = PythonModule1
-    Services.Basic = [bsGetAttrO, bsSetAttrO, bsRepr, bsStr, bsRichCompare]
+    Services.Basic = [bsRepr, bsStr, bsGetAttrO, bsSetAttrO, bsRichCompare]
     Services.InplaceNumber = []
     Services.Number = []
     Services.Sequence = []

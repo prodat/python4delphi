@@ -1955,8 +1955,8 @@ type
 //--                                                   --
 //-------------------------------------------------------
 
-  TDelphiMethod = function ( self, args : PPyObject ) : PPyObject of object; cdecl;
-  TDelphiMethodWithKW = function ( self, args, keywords : PPyObject ) : PPyObject of object; cdecl;
+  TDelphiMethod = function ( PSelf, Args : PPyObject ) : PPyObject of object; cdecl;
+  TDelphiMethodWithKW = function ( PSelf, Args, keywords : PPyObject ) : PPyObject of object; cdecl;
   TPythonEvent = procedure(Sender: TObject; PSelf, Args: PPyObject; var Result: PPyObject) of object;
   TMethodsContainer = class; // forward declaration
   TEventDefs = class; // forward declaration

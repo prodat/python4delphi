@@ -173,6 +173,11 @@ object ThreadSortForm: TThreadSortForm
     OnClick = StopBtnClick
   end
   object PythonEngine1: TPythonEngine
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
+    APIVersion = 1013
+    RegVersion = '3.10'
+    UseLastKnownVersion = False
     InitThreads = True
     PyFlags = [pfDebug, pfInteractive, pfVerbose]
     RedirectIO = False

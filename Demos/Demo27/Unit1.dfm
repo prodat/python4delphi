@@ -60,6 +60,9 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object PythonEngine1: TPythonEngine
+    UseLastKnownVersion = False
+    DllName = 'python39.dll'
+    DllPath = 'E:\EXE\Python'
     IO = PythonGUIInputOutput1
     Left = 40
     Top = 144
