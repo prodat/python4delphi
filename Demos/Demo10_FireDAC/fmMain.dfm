@@ -397,7 +397,7 @@ object Main: TMain
   object PythonEngine: TPythonEngine
     UseLastKnownVersion = False
     DllName = 'python39.dll'
-    DllPath = 'E:\EXE\Python'
+    DllPath = 'E:\EXE\Python3'
     IO = PythonGUIInputOutput
     Left = 84
     Top = 289

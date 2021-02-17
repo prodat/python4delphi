@@ -36,7 +36,7 @@ begin
     gEngine.AutoFinalize := False;
     gEngine.UseLastKnownVersion := False;
     gEngine.DllName := 'python39.dll';
-    gEngine.DllPath := 'E:\EXE\Python';
+    gEngine.DllPath := 'E:\EXE\Python3';
     gEngine.LoadDll;
     gModule := TPythonModule.Create(nil);
     gModule.Engine := gEngine;
@@ -55,7 +55,7 @@ begin
     gEngine.AutoFinalize := False;
     gEngine.UseLastKnownVersion := False;
     gEngine.DllName := 'python39.dll';
-    gEngine.DllPath := 'E:\EXE\Python';
+    gEngine.DllPath := 'E:\EXE\Python3';
     gEngine.LoadDll;
     gModule := TPythonModule.Create(nil);
     gModule.Engine := gEngine;

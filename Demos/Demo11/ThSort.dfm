@@ -166,7 +166,7 @@ object ThreadSortForm: TThreadSortForm
   end
   object PythonEngine1: TPythonEngine
     DllName = 'python39.dll'
-    DllPath = 'E:\EXE\Python'
+    DllPath = 'E:\EXE\Python3'
     APIVersion = 1013
     RegVersion = '3.10'
     UseLastKnownVersion = False
