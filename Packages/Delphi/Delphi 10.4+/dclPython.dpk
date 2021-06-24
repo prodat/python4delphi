@@ -29,7 +29,7 @@ package dclPython;
 {$DESCRIPTION 'Python4Delphi - Design-time Engine Package'}
 {$LIBSUFFIX AUTO}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,

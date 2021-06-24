@@ -28,7 +28,7 @@ package PythonFmx;
 {$DESCRIPTION 'Python4Delphi - Run-time Engine Package for FMX'}
 {$LIBSUFFIX AUTO}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,

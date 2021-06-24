@@ -27,7 +27,7 @@ package Python;
 {$DESCRIPTION 'Python4Delphi - Run-time Engine Package'}
 {$LIBSUFFIX AUTO}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   DesignIDE,

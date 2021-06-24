@@ -28,7 +28,7 @@ package PythonVcl;
 {$DESCRIPTION 'Python4Delphi - Run-time Engine Package for VCL'}
 {$LIBSUFFIX AUTO}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,

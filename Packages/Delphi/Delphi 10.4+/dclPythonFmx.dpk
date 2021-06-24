@@ -29,7 +29,7 @@ package dclPythonFmx;
 {$DESCRIPTION 'Python4Delphi - Design-time Engine Package for FMX'}
 {$LIBSUFFIX AUTO}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
